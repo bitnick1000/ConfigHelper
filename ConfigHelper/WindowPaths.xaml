@@ -1,0 +1,16 @@
+﻿<Window x:Class="Initialize.WindowPaths"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="WindowPaths" Height="600" Width="800" ResizeMode="CanMinimize">
+    <Grid>
+        <DataGrid ItemsSource="{Binding Path=Paths}" HorizontalAlignment="Left" VerticalAlignment="Top" Height="449" Width="794" AutoGenerateColumns="False" 
+                  CanUserAddRows="False" 
+                  CanUserDeleteRows="False"
+                  CellEditEnding="DataGrid_CellEditEnding_1">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Path" Width="*" Binding="{Binding Path=Value,UpdateSourceTrigger=PropertyChanged}"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+
+    </Grid>
+</Window>
