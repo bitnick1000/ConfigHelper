@@ -48,7 +48,7 @@ namespace Initialize
             registers[1].Key = Registry.CurrentUser;
             registers[1].Path = @"SOFTWARE\Microsoft\Internet Explorer\MAIN";
             registers[1].Name = "Start Page";
-            values[1] = @"file:///E:/My/Programming/develop/home/home.html";
+            values[1] = @"file:///E:/My/Programming/GitHub/home/home.html";
             description[1] = "homepage=";
 
             registers[2].Key = Registry.LocalMachine;
